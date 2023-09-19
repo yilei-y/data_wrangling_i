@@ -2,4 +2,19 @@
 title: "Simple document"
 output: github_document
 ---
+```{r}
+library(tidyverse)
+```
+
+
+Import the 'FAS_litters_csv'
+
+```{r}
+litters_df = 
+  read_csv("data/FAS_litters.csv")
+
+litters_df = 
+  janitor::clean_names(litters_df)
+
+```
 
