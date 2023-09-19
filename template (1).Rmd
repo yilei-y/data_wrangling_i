@@ -18,3 +18,43 @@ litters_df =
 
 ```
 
+```{r}
+pups_df = 
+  read_csv("./data/FAS_pups.csv")
+
+pups_df = 
+  janitor::clean_names(pups_df)
+```
+
+```{r}
+litters_df
+
+head(litters_df)
+
+tail(litters_df)
+```
+
+use "view"
+
+```{r, eval = FALSE}
+view(litters_df)
+
+```
+
+Look at a data summary
+
+```{r}
+str(litters_df)
+
+skimr::skim(litters_df)
+```
+
+##options in read_*
+
+```{r,}
+litters_df =
+  read_csv(
+    "data/FAS_litters.csv", 
+    skip = 10, col_names = FALSE)
+```
+
