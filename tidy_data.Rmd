@@ -1,0 +1,11 @@
+---
+title: "tidy_data"
+author: "Yilei Yang"
+date: "2023-09-26"
+output: github_document
+---
+
+```{r}
+library(tidyverse)
+```
+
